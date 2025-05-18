@@ -12,7 +12,7 @@ namespace FFXIVMonReborn.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.4.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.13.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -20,6 +20,18 @@ namespace FFXIVMonReborn.Properties {
         public static Settings Default {
             get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("SapphireServer/Sapphire")]
+        public string Repo {
+            get {
+                return ((string)(this["Repo"]));
+            }
+            set {
+                this["Repo"] = value;
             }
         }
         
@@ -229,6 +241,30 @@ namespace FFXIVMonReborn.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool UseHeaderEpochTimestamp {
+            get {
+                return ((bool)(this["UseHeaderEpochTimestamp"]));
+            }
+            set {
+                this["UseHeaderEpochTimestamp"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string GameWindowName {
+            get {
+                return ((string)(this["GameWindowName"]));
+            }
+            set {
+                this["GameWindowName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string AnonymiseContentID {
             get {
@@ -265,22 +301,10 @@ namespace FFXIVMonReborn.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string GameWindowName {
-            get {
-                return ((string)(this["GameWindowName"]));
-            }
-            set {
-                this["GameWindowName"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool SuppressParsingErrors {
+        public string SuppressParsingErrors {
             get {
-                return ((bool)(this["SuppressParsingErrors"]));
+                return ((string)(this["SuppressParsingErrors"]));
             }
             set {
                 this["SuppressParsingErrors"] = value;
@@ -296,18 +320,6 @@ namespace FFXIVMonReborn.Properties {
             }
             set {
                 this["RepoBranch"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("SapphireServer/Sapphire")]
-        public string Repo {
-            get {
-                return ((string)(this["Repo"]));
-            }
-            set {
-                this["Repo"] = value;
             }
         }
     }
